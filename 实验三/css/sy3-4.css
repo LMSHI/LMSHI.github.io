@@ -1,0 +1,6 @@
+table {border:1px solid #000000;font:12px/1.5em "宋体"; border-collapse:collapse;} 
+caption{text-align: center;font-weight: bold;}
+th{color: #F4F4F4;border: 1px solid #000000;background: #328aa4;}
+td{text-align: center;border: 1px solid #000000;background: #e5f1f4;}
+.tr_bg td{background:#FDFBCC;}
+
