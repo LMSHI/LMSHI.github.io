@@ -1,0 +1,56 @@
+@media (max-width:500px){
+    .container{
+        width: 250px;
+    }
+    /***  section 导航栏***/
+    section div.sec_nav ul li a{
+        display: inline-block;
+        height: 30px;
+        padding: 0 20px;
+        line-height: 30px;
+        /* color: rgb(53, 53, 53); */   
+    }
+    /**箭头**/
+    div.sec_bgback .sec_leftWrite::after{
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 10px;
+        width: 60px;
+        height: 300px;
+        border-right: 7px solid rgb(190, 190, 190,0.5);
+        border-bottom: 7px solid rgb(189, 189, 189,0.5);
+        transform: skewY(45deg);
+        opacity: 0.7;
+    }
+}
+@media (min-width:501px) and (max-width:768px){
+    .container{
+        width: 400px;
+    }
+}
+@media (min-width:769px) and (max-width:1200px){
+    .container{
+        width: 700px;
+    }
+    /**** gif图 ****/
+    div.sec_bgback .sec_rightPic .pic_center{
+        width: 200px;
+        margin:40px auto;
+    
+    }
+}
+@media screen and (min-width:1201px){
+    .container{
+        width: 1200px;
+    }
+    div.sec_bgback .sec_rightPic .pic_center{
+        width: 400px;
+        margin:80px auto;
+    }
+}
+@media screen and (max-height:500px){
+    .container{
+        width: 1000px;
+    }
+}
