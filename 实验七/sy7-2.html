@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy7-2</title>
+<script>
+	function turnOn() {
+  		document.getElementById("light").src = "on.png";
+	}
+	function turnOff() {
+  		document.getElementById("light").src = "off.png";
+	}
+</script>
+</head>
+
+<body>
+<img id="light" src="off.png">
+<br>
+<button onclick="turnOn()">开灯</button>
+<button onclick="turnOff()">关灯</button>
+</body>
+</html>
