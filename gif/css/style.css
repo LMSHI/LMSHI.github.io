@@ -1,0 +1,619 @@
+/** 重置样式  reset style **/
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+    /**不用去考虑了它的border和padding**/
+}
+
+html,body {
+    height: 100%;   /***** 网页自适应浏览器窗口*****/
+}
+html {
+    font-size: 18px;   /*基准*/
+    font-family: MuLan;
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* 这里是头部样式设置 header styles   start  */
+header{
+    /* background: #E9171B; */
+    width: 100%;
+    background: url("../imges/0713..jpg") no-repeat center center/cover;
+    padding-bottom:16.5rem;
+}
+/****头部logo***/
+ul.header_list li{
+    height: 3.5rem;
+    margin: 1.2rem .5rem;
+    line-height: 3.5rem;
+    font-size: 1.1rem;  
+}
+ul.header_list li>img{
+    height: 100%;
+}
+
+header h2{
+    margin-top: 9.5rem;
+    text-align: center;
+    font-size:4.25rem;
+}
+header p{
+    font-family: XiYuan;
+    margin:1rem 0;
+    text-align: center;
+    font-size: .9rem;
+}
+header>div .enter{
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+header>div .enter i{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: #19f7ff;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+}
+header>div .enter i:hover{
+    color: #15b3b8;
+    font-size: 1.6rem;
+}
+header>div .enter i::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: radial-gradient(#19f7ff 20%,transparent);
+    border-radius: 1.5rem;
+    animation: run 1.5s linear infinite;
+}
+@keyframes run{
+    0%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.8);
+    }
+    
+}
+/* 头部样式结束  end */
+
+/* section style  start */
+section{
+    padding-bottom: 2rem;
+    background:rgb(53, 53, 53);
+
+}
+
+section>h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+section h4{
+    font-family: XiYuan;
+    height: 1rem;
+    width: 14rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: .4rem auto 2.25rem;
+    font-weight: 300;
+    font-size: 1rem;
+    border-bottom: .1rem solid #19f7ff;
+}
+/* 导航栏nav style */
+section div.sec_nav{
+    position: sticky;
+    top: 1.75rem;
+    z-index: 5;
+}
+section div.sec_nav ul{
+	background:#E9171B;
+    box-shadow: 0 -0.25rem 1rem #E9171B; 
+    transform: translateY(-1.75rem);
+    -ms-transform: translateY(-1.75rem);    /*IE9*/
+    -moz-transform: translateY(-1.75rem);   /* Firefox */
+    -webkit-transform: translateY(-1.75rem);  /* Safari 和 Chrome */
+    -o-transform: translateY(-1.75rem);  /* Opera */
+
+}
+
+section>div>ul::after{
+    content: '';
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+section div.sec_nav ul li{
+    float: left;  
+}
+section div.sec_nav ul li a{
+    display: inline-block;
+    height: 3rem;
+    padding: 0 2rem;
+    line-height: 3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: 1.3rem; 
+    /* color: rgb(53, 53, 53); */
+    color: #ffddd3; 
+   
+}
+section div.sec_nav ul li a:hover{
+    background:#E92F32;
+    color: white;
+}
+
+/* 导航栏nav style  end*/
+section .sec_flex{
+    background: url("../imges/0713抠图.png") no-repeat center center;
+    background-size: 45vmin;
+}
+div.sec_bgback .sec_leftWrite{
+    position: relative;
+    width: 50%;
+    z-index: 0;
+}
+/**箭头**/
+div.sec_bgback .sec_leftWrite::after{
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: 15.25rem;
+    z-index: -1;
+    display: inline-block;
+    width: 3rem;
+    height: 23rem;
+    border-right: .35rem solid rgb(190, 190, 190,0.5);
+    border-bottom: .35rem solid rgb(189, 189, 189,0.5);
+    transform: skewY(45deg);
+    opacity: 0.7;
+    filter:alpha(opacity=70);  /**IE678**/
+}
+div.sec_bgback .sec_leftWrite:hover::after{
+    border-right: .35rem solid #19f7ff;
+    border-bottom: .35rem solid #19f7ff;
+}
+div.sec_bgback .sec_leftWrite .sec_headline{   
+    margin: 5rem 2rem;  
+}
+div.sec_bgback .sec_leftWrite .sec_headline h2{
+    font-size: 2.5rem;
+}
+div.sec_bgback .sec_leftWrite .sec_headline h4{
+    font-family: XiYuan;
+    font-size: 2.1rem;
+    color: #ffddd3; 
+    margin-bottom: 1rem;
+}
+/**section btn按钮style  start***/
+div.sec_bgback .sec_leftWrite button{
+    background: white;
+    margin-left: 9.25rem;
+    border: none;
+}
+div.sec_bgback .sec_leftWrite button a{
+    display: inline-block;
+    width: 7.6rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: .9rem;
+    color: #E9171B;
+}
+div.sec_bgback .sec_leftWrite button:hover a{
+    background: #E9171B;
+    color: white;
+    box-shadow: 0 0 .5rem #E92F32;
+}
+/**section btn按钮style  end***/
+
+div.sec_bgback .sec_rightPic{
+    flex: 1;
+}
+/* section img start */
+div.sec_bgback .sec_rightPic .pic_center{
+    position: relative;
+    width: 20rem;
+    margin:4rem auto;
+    opacity: 0.9;
+    filter:alpha(opacity=90);  /**IE678**/
+}
+div.sec_bgback .sec_rightPic .pic_center::after{
+    content: '';
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #E92F32;
+    z-index: -1;
+}
+div.sec_bgback .sec_rightPic .pic_center img{
+    vertical-align: top;  /** 清除默认间隙**/
+}
+/* section img end */
+div.sec_bgback .sec_rightPic .pic_center p{
+    height: 6.5rem;
+    padding: .8rem 1.05rem .5rem 1.05rem;
+    background: white;
+    font-size: .8rem;
+    color: rgb(31, 26, 26);
+}
+/* 图片展示样式 start*/
+div.sec_picture div{
+    width: 20%;
+    height: 30rem;
+    overflow: hidden;
+}
+div.sec_picture div img{
+    width: 100%;
+    filter:brightness(0.4);
+    -webkit-filter:brightness(0.4);
+    -moz-filter:brightness(0.4);
+    -o-filter:brightness(0.4);
+    -ms-filter:brightness(0.4);
+}
+
+div.sec_picture div:nth-child(4) img{
+    border: .2rem solid #19f7ff;
+    filter:brightness(1);
+    -webkit-filter:brightness(1);
+    -moz-filter:brightness(1);
+    -o-filter:brightness(1);
+    -ms-filter:brightness(1);
+}
+div.sec_picture div:hover img{
+    border: .2rem solid #19f7ff;
+    filter:brightness(1);
+    -webkit-filter:brightness(1);
+    -moz-filter:brightness(1);
+    -o-filter:brightness(1);
+    -ms-filter:brightness(1);
+}
+/* 图片展示样式 end*/
+
+/* 发现 find样式从这里 start  */
+section .find{
+    height: 24.8rem;
+    overflow: hidden;
+    border: .2rem solid #19f7ff;
+    display: grid;
+    display: -webkit-grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    display: -o-grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(4,25%);
+    /* gap: .25rem .25rem; */
+    grid-template-areas: 'a a b c'
+                         'd e e c';
+}
+div.find img{
+    width: 100%;
+}
+div.find img:first-child{
+    grid-area: a;
+}
+div.find img:nth-child(2){
+    grid-area: b;
+}
+div.find img:nth-child(3){
+    grid-area: c;
+}
+div.find img:nth-child(4){
+    grid-area: d;
+}
+div.find img:nth-child(5){
+    grid-area: e;
+}
+
+/* section  style end */
+
+/* footer style start  */
+footer{
+    background: #E9171B;
+    font-size: .9rem;
+    color: #ffddd3;
+}
+
+.footbody ul li{
+    padding: 1.85rem;  
+}
+.footbody ul li.bigWrite{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footbody a{
+    color: #ffddd3;
+}
+.footbody p{
+    text-align: center;
+}
+.footbody div{
+    text-align: center;
+    padding: 1rem 0 2rem;
+
+}
+/* footer style end */
+
+/***********电影详情页 start*********/
+/* 详情section start */
+.film_synopsis{
+    margin-bottom: 1rem;
+}
+section h3{
+    padding:0 .5rem;
+    margin: 1rem 0;
+}
+
+/**每个人的歌**/
+.preview .previewBox video{
+    width: 30rem;
+}
+
+.previewBox ul.preview_list{
+    padding:.5rem 1.4rem;
+    padding-right: 0;
+    flex: 1;
+}
+
+.previewBox ul.preview_list li{
+    margin-bottom: .2rem;
+}
+/* 详情section end */
+
+/* 影片评价 start */
+.film_Evaluation p{
+    margin-bottom: .5rem;
+}
+.film_Evaluation div{
+    width: 100%;
+    text-align: center;
+    margin:.5rem 0;
+} 
+.film_Evaluation img{
+    width: 25rem;
+}
+/* 影片评价 end */
+.enter_video p a{
+    color: #19f7ff;
+    text-decoration: underline;
+}
+
+/***********电影详情页 end*********/
+
+/************* aboutUs  关于我们  start  ***************/
+section .about_us ul{
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+section .about_us ul li{
+    width: 5rem;
+    height: 5rem;
+    margin:0 .5rem .5rem 0;
+    border-radius: 50%;
+    border: .05rem solid #717171;
+}
+/**第一行*****/
+section .about_us ul.color_box_01 li:nth-child(1){
+    background: #353535;
+}
+section .about_us ul.color_box_01 li:nth-child(2){
+    background: #515151;
+}
+section .about_us ul.color_box_01 li:nth-child(3){
+    background: #535353;
+}
+section .about_us ul.color_box_01 li:nth-child(4){
+    background: #6b6b6b;
+}
+section .about_us ul.color_box_01 li:nth-child(5){
+    background: #7c7c7c;
+}
+section .about_us ul.color_box_01 li:nth-child(6){
+    background: #ababab;
+}
+section .about_us ul.color_box_01 li:nth-child(7){
+    background: #c4c4c4;
+}
+
+/****第二行****/
+section .about_us ul.color_box_02 li:nth-child(1){
+    background: #C10000;
+}
+section .about_us ul.color_box_02 li:nth-child(2){
+    background: #E9171B;
+}
+section .about_us ul.color_box_02 li:nth-child(3){
+    background: #E92F32;
+}
+section .about_us ul.color_box_02 li:nth-child(4){
+    background: #ffddd3;
+}
+section .about_us ul.color_box_02 li:nth-child(5){
+    background: #fff;
+}
+/****** 第三行****** */
+section .about_us ul.color_box_03 li:nth-child(1){
+    background: #15b3b8;
+}
+section .about_us ul.color_box_03 li:nth-child(2){
+    background: #19f7ff;
+}
+/***第四行******/
+section .about_us ul.color_box_04 li{
+    background: #ff7474;
+}
+/************* aboutUs  关于我们  end  ***************/
+
+/*************友情链接 blogroll start**********/
+.blogroll p a{
+    color: #19f7ff;
+    font-size: 1.1rem;
+    text-decoration:underline;
+}
+
+/*************友情链接 blogroll end**********/
+
+/*********建议advice start ***************/
+.advice{
+    font-size: 1.1rem;
+    
+}
+.advice form{
+    width: 25rem;
+    padding:1.5rem 1.25rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 .5rem gray inset;
+}
+.advice form div{
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.advice form input{
+    width: 15rem;
+    height: 1.5rem;
+    padding-left: .5rem;
+    line-height: 1.5rem;
+    outline: none;
+    font-size: .9rem;
+}
+.advice form input:hover{
+    border: .05rem solid #E9171B;
+}
+.advice  form div.W100px{
+    margin-top: 2rem;
+}
+.advice  form div.W100px input{
+    width: 100px;
+    padding: 0 ;
+}
+.advice form div label{
+    display: inline-block;
+    vertical-align: center;
+
+}
+.advice  form div.form_three label{
+    vertical-align: top;
+ } 
+.advice form textarea{
+    width: 15rem;
+    height: 10rem;
+    padding-left: .5rem;
+    outline: none;
+    font-size: .9rem;
+ 
+}
+/*********建议advice end ***************/
+
+/*******加入我们  join us  start********/
+section .join_us{
+    height: 15rem;
+}
+/*******加入我们  join us  end********/
+
+/****观影频道  movie_channel start*****/
+.movie_channel_box ul{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.movie_channel_box ul li{
+    position: relative;
+    width: 15rem;
+    height: 27.5rem;
+    
+}
+.movie_channel_box ul li:hover img{
+    filter:brightness(0.5) ;
+    -webkit-filter:brightness(0.5);
+}
+.movie_channel_box ul li:hover p{
+    display: block;
+}
+.movie_channel_box ul li:hover h4{
+    border-bottom: .1rem solid #E9171B;
+}
+.movie_channel_box ul li img{
+    width:100%;
+    height: 80%;
+}
+.movie_channel_box ul li p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    display: none;
+}
+.movie_channel_box ul li h4{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+/****观影频道  movie_channel end*****/
+/****电影频道  movie_channel start*****/
+.movie_channel_box ul{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.movie_channel_box ul li{
+    position: relative;
+    width: 15rem;
+    height: 27.5rem;
+    
+}
+.movie_channel_box ul li:hover img{
+    filter:brightness(0.5) ;
+    -webkit-filter:brightness(0.5);
+}
+.movie_channel_box ul li:hover p{
+    display: block;
+}
+.movie_channel_box ul li:hover h4{
+    border-bottom: .1rem solid #E91F32;
+}
+.movie_channel_box ul li img{
+    width:100%;
+    height: 80%;
+}
+.movie_channel_box ul li p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    display: none;
+}
+.movie_channel_box ul li h4{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+/****电影频道  movie_channel end*****/
